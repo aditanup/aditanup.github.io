@@ -1,0 +1,38 @@
+.title-div {
+    background-color:#F2F2F2;
+    color: blue;
+    font-family: "Poppins", serif;
+    font-size: calc(20px + 1.5vw);
+    text-align: center;
+    padding: 12% 0% 5% 0%;
+    margin: 0% 0% 1% 0%;
+}
+
+.body-div {
+    background-color:#FCFCFC;
+    border-style: solid;
+    border-color: #EDEDED;
+    border-width: 1.5px;
+    color: lightblue;
+    font-family: "Poppins", serif;
+    font-size: calc(20px + 1.5vw);
+    text-align: center;
+    border-top-left-radius: 1.3em;
+    border-top-right-radius: 1.3em;
+    width: 80%;
+    max-width: 1200;
+    margin: auto;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .title-div {
+        padding: 25% 0% 5% 0%;
+    }
+
+    .body-div {
+        width: 100%;
+        /* do something with margin to make it fill the screen */
+    }
+}
