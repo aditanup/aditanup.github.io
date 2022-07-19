@@ -1,8 +1,8 @@
 .title-div {
     background-color:#F2F2F2;
-    color: blue;
+    color: black;
     font-family: "Poppins", serif;
-    font-size: calc(20px + 1.5vw);
+    font-size: calc(20px + 2.0vw);
     text-align: center;
     padding: 12% 0% 5% 0%;
     margin: 0% 0% 1% 0%;
@@ -19,20 +19,23 @@
     text-align: center;
     border-top-left-radius: 1.3em;
     border-top-right-radius: 1.3em;
+    border-bottom-right-radius: 1.3em;
+    border-bottom-left-radius: 1.3em;
     width: 80%;
     max-width: 1200;
     margin: auto;
 }
 
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Extra small devices (phones, 700px and down) */
+@media only screen and (max-width: 750px) {
     .title-div {
         padding: 25% 0% 5% 0%;
     }
 
     .body-div {
         width: 100%;
-        /* do something with margin to make it fill the screen */
+        position:absolute;
+        left:0;
+        right:0; 
     }
 }
