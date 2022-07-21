@@ -65,5 +65,8 @@ li a:hover {
         font-size: 14px;
         font-family: "Open Sans", serif;
     }
+    li {
+        margin: 0px 12px;
+    }
 
 }
