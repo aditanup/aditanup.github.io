@@ -60,5 +60,6 @@ li a:hover {
     }
     li {
         margin: 0px 10px;
+        font-size: 14px;
     }
 }
