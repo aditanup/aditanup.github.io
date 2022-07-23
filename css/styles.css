@@ -48,9 +48,57 @@ li a:hover {
     max-width: 1200;
     margin: auto;
 }
+  
+.flex-container {
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+    width: 80%;
+    max-width: 1200;
 
-/* Extra small devices (phones, 700px and down) */
-@media only screen and (max-width: 750px) {
+    
+}
+  
+.flex-item-left {
+    border-top-left-radius: 1.3em;
+    border-top-right-radius: 1.3em;
+    border-bottom-right-radius: 1.3em;
+    border-bottom-left-radius: 1.3em;
+    border-color: #EDEDED;
+    border-width: 1.5px;
+    background-color:#FCFCFC;
+    border-style: solid;
+
+    box-sizing: border-box;
+    flex: 49.5%;
+
+    margin-bottom: 5px;
+    margin-right: 0.5%;
+
+}
+  
+.flex-item-right {
+    border-top-left-radius: 1.3em;
+    border-top-right-radius: 1.3em;
+    border-bottom-right-radius: 1.3em;
+    border-bottom-left-radius: 1.3em; 
+    border-color: #EDEDED;
+    border-width: 1.5px;
+    background-color:#FCFCFC;
+    border-style: solid;
+
+    box-sizing: border-box;
+    flex: 49.5%;
+
+    margin-bottom: 5px;
+    margin-left: 0.5%;
+}
+
+/* Extra small devices (phones, 800px and down) */
+@media only screen and (max-width: 800px) {
     .title-div {
         padding: 25% 0% 5% 0%;
     }
@@ -67,6 +115,17 @@ li a:hover {
     }
     li {
         margin: 0px 12px;
+    }
+
+    .flex-item-right, .flex-item-left {
+        box-sizing: border-box;
+        flex: 100%;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
+    .flex-container {
+        width: 100%;
     }
 
 }
