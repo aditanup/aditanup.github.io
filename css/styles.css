@@ -1,8 +1,13 @@
+* {
+    text-rendering:optimizeLegibility;
+}
+
 .title-div {
     background-color:#F2F2F2;
     color: black;
     font-family: "Poppins", serif;
     font-size: calc(20px + 2.0vw);
+    font-weight: 500;
     text-align: center;
     padding: 12% 0% 5% 0%;
     margin: 0% 0% 1% 0%;
@@ -24,6 +29,7 @@ li a {
     text-decoration: none;
     font-size: 17px;
     font-family: "Open Sans", serif;
+    font-weight: 400;
 }
 
 li a:hover {
@@ -39,6 +45,7 @@ li a:hover {
     color: lightblue;
     font-family: "Poppins", serif;
     font-size: calc(20px + 1.5vw);
+    font-weight: 500;
     text-align: center;
     border-top-left-radius: 1.3em;
     border-top-right-radius: 1.3em;
@@ -104,6 +111,7 @@ li a:hover {
 
     text-align: center;
     font-family: "Poppins", serif;
+    font-weight: 500;
     font-size: 27px;
 }
 
@@ -113,6 +121,7 @@ li a:hover {
 
     text-align: center;
     font-family: "Open Sans", serif;
+    font-weight: 400;
     font-size: 18px;
 }
 
@@ -123,6 +132,7 @@ li a:hover {
 
     text-align: left;
     font-family: "Open Sans", serif;
+    font-weight: 400;
     font-size: 16px;
 }
 
@@ -152,6 +162,7 @@ li a:hover {
         text-decoration: none;
         font-size: 14px;
         font-family: "Open Sans", serif;
+        font-weight: 400;
     }
     li {
         margin: 0px 12px;
@@ -173,7 +184,7 @@ li a:hover {
 
     .card-body {
         margin: auto;
-        padding: 10px 0px 0px 0px;
+        padding: 5px 0px 0px 0px;
         max-width: 370px;
     }
     
