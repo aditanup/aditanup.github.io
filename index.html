@@ -22,11 +22,6 @@
     <!-- Animate On Scroll Library CSS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <!--  Masonry -->
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-  <!-- images loaded library-->
-  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-
 </head>
 <body>
     <div class="container-fluid maxWidth">
@@ -107,7 +102,7 @@
 
         <div id="experience" class="spacerDiv"></div>
 
-        <div class="row grid" data-masonry="{&quot;percentPosition&quot;: true }">
+        <div class="row grid">
           <div class="col-sm-6 col-lg-6 mb-4" >
             <div data-aos="zoom-in-up" data-aos-once="true" class="card" style="border-radius: 40px; background-color: rgb(245, 245, 247); border-width: 0;">
               <iframe style="border-top-left-radius: 40px; border-top-right-radius: 40px;" class="bd-placeholder-img card-img-top" width="100%" height="315" src="https://www.youtube-nocookie.com/embed/bZahsA8McIQ?si=XPZbvyxyHeshNSXX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -297,7 +292,9 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
     <script>
         // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
         window.onscroll = function() {scrollFunction()};
@@ -310,13 +307,13 @@
             }
         }
 
-        // init Masonry
-        var $grid = $('.grid').masonry({
-          // options...
-        });
-        // layout Masonry after each image loads
-        $grid.imagesLoaded().progress( function() {
-          $grid.masonry('layout');
+        // Initialize Masonry only after every card image has a known size.
+        var $grid = $('.grid');
+        $grid.imagesLoaded(function() {
+          $grid.masonry({
+            percentPosition: true,
+            transitionDuration: '0.25s'
+          });
         });
     </script>
 </body>
